@@ -36,9 +36,6 @@ while game_running:
             if n>9:
                 n=0
 
-            n+=1
-            if n>9:
-                n=0
         elif event.key==pygame.K_LEFT:
             new_v=velocity+a
             if x-velocity>0:
