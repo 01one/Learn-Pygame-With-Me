@@ -16,7 +16,7 @@ def button():
 	button_font=pygame.font.Font(pygame.font.get_default_font(), 20)
 	button_text=button_font.render('Exit',True,background)
 	pygame.draw.rect(screen,button_color, [width/2, 100, 80, 40], border_radius=10)
-	screen.blit(button_text,(width/2+10,110))
+	screen.blit(button_text,(width/2+20,110))
 
 
 game_running=True
