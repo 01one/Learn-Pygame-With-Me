@@ -6,9 +6,7 @@ width,height=user_display.current_w,user_display.current_h
 screen=pygame.display.set_mode((width,height))
 
 background=(255,255,255)
-purple=(187,51,255)
 red=(255,0,0)
-apple_green=(170,204,0)
 cornflower_blue=(128,149,255)
 button_color=cornflower_blue
 button_position=pygame.Rect(width/2,100,80,40)
