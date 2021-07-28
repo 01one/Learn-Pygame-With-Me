@@ -7,8 +7,6 @@ screen_height=600
 screen=pygame.display.set_mode((screen_width,screen_height))
 white=(255,255,255)
 black=(0,0,0)
-red=(255,0,0)
-green=(0,255,0)
 
 def text_view(text_color,text,text_font,text_rect):
     text_lines = []
