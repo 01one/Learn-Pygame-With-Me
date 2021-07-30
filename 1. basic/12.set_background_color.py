@@ -10,5 +10,4 @@ while game_running:
             pygame.quit()
             sys.exit()
     screen.fill(lightgreen)
-    pygame.draw.line(screen,(255,255,255),(50,50),(50,200),5)
     pygame.display.update()
