@@ -9,7 +9,7 @@ background=(255,255,255)
 black=(0,0,0)
 
 
-font=pygame.font.Font('data/font/Truetypewriter.ttf', 70)
+font=pygame.font.Font('data/font/VT323-Regular.ttf', 70)
 text=font.render('Coding is poetry',True,black)
 
 
