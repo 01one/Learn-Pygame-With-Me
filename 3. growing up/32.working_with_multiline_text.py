@@ -49,7 +49,7 @@ while game_running:
 
 	Text_color=black
 	Text="Twinkle, Twinkle, Little Star\nBY JANE TAYLOR\n\nTwinkle, twinkle, little star,\nHow I wonder what you are!\nUp above the world so high,\nLike a diamond in the sky.\n\nWhen the blazing sun is gone,\nWhen he nothing shines upon,\nThen you show your little light,\nTwinkle, twinkle, all the night.\n\nThen the traveler in the dark\nThanks you for your tiny spark,\nHow could he see where to go,\nIf you did not twinkle so?\nIn the dark blue sky you keep,\nOften through my curtains peep\nFor you never shut your eye,\nTill the sun is in the sky.\n\nAs your bright and tiny sparkn\nLights the traveler in the dark,\nThough I know not what you are,\nTwinkle, twinkle, little star."
-	Text_font=pygame.font.Font('data/font/Truetypewriter.ttf', 20)
+	Text_font=pygame.font.Font('data/font/VT323-Regular.ttf', 20)
 	Text_rect=pygame.Rect(10,0,screen_width,screen_height)
 	show_text=text_view(Text_color,Text,Text_font,Text_rect)
 	screen.fill(white)
