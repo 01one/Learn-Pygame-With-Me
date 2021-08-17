@@ -6,9 +6,9 @@ pygame.init()
 clock=pygame.time.Clock()
 
 width=640
-height=427
+height=426
 screen=pygame.display.set_mode((width,height))
-image=pygame.image.load('data/images/horizon.jpg')
+image=pygame.image.load('data/images/loneliness.jpg')
 
 class Rainfall():
 	def __init__(self):
