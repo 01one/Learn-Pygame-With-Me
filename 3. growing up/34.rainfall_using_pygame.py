@@ -4,18 +4,19 @@ from random import randint
 
 pygame.init()
 clock=pygame.time.Clock()
-user_display=pygame.display.Info()
-width,height=user_display.current_w,user_display.current_h
-screen=pygame.display.set_mode((width,height-50))
 
+width=640
+height=427
+screen=pygame.display.set_mode((width,height))
+image=pygame.image.load('data/images/horizon.jpg')
 
 class Rainfall():
 	def __init__(self):
 		self.x=randint(1,width)
-		self.y=randint(-height,-10)
+		self.y=randint(-height,height)
 	
 	def show(self):
-		pygame.draw.line(screen,((255,255,255)),(self.x,self.y),(self.x,self.y+2),2)
+		pygame.draw.line(screen,((255,255,255)),(self.x,self.y),(self.x,self.y+.5),1)
 		
 	def update(self):
 		if self.y>height:
@@ -24,15 +25,15 @@ class Rainfall():
 		else:
 			self.y=10+self.y*1.03
     
-Rain=[Rainfall() for i in range(2000)]
+Rain=[Rainfall() for i in range(1000)]
 game_running=True
 while game_running:
-	clock.tick(100)
+	clock.tick(60)
 	for event in pygame.event.get():
 		if event.type==QUIT:
 			pygame.quit()
 			sys.exit()
-	screen.fill((62,70,216))
+	screen.blit(image,(0,0))
 	for i in range(len(Rain)):
 		Rain[i].show()
 		Rain[i].update()
