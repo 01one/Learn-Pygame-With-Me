@@ -24,7 +24,7 @@ class Rainfall():
 
 		else:
 			self.y=10+self.y*1.03
-    
+n=1
 Rain=[Rainfall() for i in range(1000)]
 game_running=True
 while game_running:
@@ -34,7 +34,11 @@ while game_running:
 			pygame.quit()
 			sys.exit()
 	screen.blit(image,(0,0))
-	for i in range(len(Rain)):
+	
+	
+	for i in range(n):
 		Rain[i].show()
 		Rain[i].update()
+	if n+1<1000:
+		n+=1
 	pygame.display.update()
