@@ -1,0 +1,1 @@
+Use mouse button and wheel to scroll and browse next or previous poem.
