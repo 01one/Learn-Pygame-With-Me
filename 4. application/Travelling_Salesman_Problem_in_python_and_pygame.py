@@ -123,3 +123,5 @@ while game_running:
 	screen.blit(surface,(350,0))
 	show_shortage_distance(str(lowest))
 	pygame.display.update()
+
+	
