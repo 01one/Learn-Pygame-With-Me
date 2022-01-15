@@ -1,4 +1,4 @@
-import pygame,sys                           #import nessary module
+import pygame,sys                           #import necessary module
 from pygame.locals import*
 pygame.init()                               #initialize imported pygame modules
 pygame.display.set_mode((400,400))
